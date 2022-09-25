@@ -222,4 +222,15 @@ struct Player {
   tech_tiles: TechTiles,
 }
 
+struct Costs {
+  resources: Resources
+}
+struct Effects {
+  
+}
 
+
+struct Game {
+  players: Vec<Player>,
+  round: i32
+}
