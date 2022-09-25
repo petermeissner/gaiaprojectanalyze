@@ -13,7 +13,9 @@ fn main() {
     }
     let file_name = &args[1];
     let file_data = helper::read_text(&file_name);
-    println!("{}", file_data);
+    // println!("{}", file_data);
+
     let gm = helper::Gmap::from_map_txt(&file_data); 
-    gm.print();
+    // print!("{}", gm.as_list());
+    print!("{}", gm.as_map());
 }
